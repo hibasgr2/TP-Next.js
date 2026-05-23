@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // GET : récupérer un projet par id
 export async function GET(
